@@ -1,0 +1,21 @@
+GEN AI USAGE DECLARATION 
+Tool: ChatGPT-4 (March 2024 version)
+Purpose: Targeted assistance with specific technical challenges
+
+1. PROMPT: How to efficiently filter datetime ranges in lubridate for Uber pickup data?
+   - Used: parse_date_time() implementation approach
+   - Modifications: Added error handling for malformed timestamps
+ 2. PROMPT: Leaflet heatmap rendering too slowly with 50k points - optimization options?
+    - Context: Working space kept crashing during heatmap rendering
+    - Used: Sample size reduction strategy and parameter tuning
+    - Modifications:
+      - Changed sample_n() from 50k → 20k points
+      - Adjusted radius/blur based on NYC density testing
+      - Added conditional subsampling (if nrow > 20k)
+ 3. PROMPT: Best way to calculate geographic clusters without specialized spatial packages?
+    - Context: Needed simple hotspot detection for assignment constraints
+    - Used: Coordinate rounding method explanation
+    - Modifications:
+      - Implemented round(Lat/Lon, 3) instead of suggested round(.,2)
+      - Added human-readable location labels (Downtown/Uptown)
+All AI-suggested code was manually tested and validated to ensure logical consistency with the dataset.
